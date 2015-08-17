@@ -1,0 +1,301 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: table;
+    font-family: 'Lato', Verdana, Trebuchet MS, sans-serif;
+    margin: 15px auto 0;
+    max-width: 980px;
+    width: 100%;
+}
+header {
+    background: #2d005f none repeat scroll 0 0;
+    box-sizing: border-box;
+    float: left;
+    padding: 3px 20px;
+    width: 100%;
+}
+header .logo, header .logo img {
+    float: left;
+}
+header nav ul li {
+    float: left;
+    margin: 6px 13px;
+	list-style:none;
+}
+header nav {
+    float: right;
+}
+header nav ul li a {
+    color: #fff;
+    float: left;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+main {
+    box-sizing: border-box;
+    color: #3e3e3e;
+    float: left;
+    padding: 0 25px;
+    width: 100%;
+}
+main .heading {
+    float: left;
+    margin: 43px 0;
+    text-align: center;
+    width: 100%;
+}
+main .heading h1 {
+    font-size: 60px;
+    font-weight: normal;
+	font-family: 'Julius Sans One', sans-serif;
+}
+main .heading em {
+    display: inline-block;
+    font-size: 17px;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+.descriptive-para {
+    float: left;
+    width: 100%;
+	line-height:22px;
+}
+.descriptive-para strong {
+    display: table;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+.descriptive-para span {
+    display: table;
+    font-size: 12px;
+    margin: 15px 0;
+}
+hr {
+    background: #8c8c8c none repeat scroll 0 0;
+    border: medium none;
+    display: table;
+    height: 1px;
+    width: 100%;
+}
+.disable {
+    opacity: 0.2;
+    pointer-events: none;
+}
+main article {
+    float: left;
+    margin: 15px 0;
+    width: 100%;
+}
+main article h2, main .summary-cont h2, main article h3 {
+    box-sizing: border-box;
+    display: table;
+    font-size: 22px;
+    margin: 15px 0;
+    padding: 0 0 0 25px;
+    width: 100%;
+}
+article .boxed-cont {
+    background: #f0f0f0 none repeat scroll 0 0;
+    border: 1px solid #c2bebd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    margin: 15px 0;
+	display:table;
+    padding: 38px 25px;
+    width: 100%;
+}
+article .boxed-cont.act {
+    border-color: #a4d4eb;
+    border-width: 3px;
+}
+article .boxed-cont strong {
+    display: table;
+    font-size: 19px;
+    margin: 0 0 20px;
+}
+.boxed-cont .text-cont {
+    display: table-cell;
+    width: 90%;
+}
+.boxed-cont .price-cont {
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+}
+.boxed-cont .price-cont span {
+    font-size: 20px;
+    font-weight: bold;
+	float:left;
+	width:100%;
+    text-align: center;
+}
+.boxed-cont .price-cont span input {
+    display: table;
+    margin: 12px auto 0;
+}
+.boxed-cont .text-cont p {
+    float: left;
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%;
+}
+.boxed-cont .text-cont > em {
+    display: table;
+    font-size: 18px;
+    font-style: normal;
+    margin: -16px 0 15px;
+}
+.summary-cont {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+.summary-cont dl {
+    box-sizing: border-box;
+    float: left;
+    font-size: 18px;
+    margin: 0 0 30px;
+    padding: 0 40px;
+    width: 100%;
+}
+.summary-cont dl dt {
+    clear: left;
+    float: left;
+    margin: 12px 0;
+}
+.summary-cont dl dd {
+    float: right;
+    font-weight: bold;
+}
+.summary-cont dl dt.total {
+    font-weight: bold;
+}
+.paypal-cont {
+    box-sizing: border-box;
+    float: left;
+    margin: 15px 0;
+    padding: 25px 0 25px 6%;
+    width: 50%;
+}
+.paypal-cont h2 {
+    font-size: 44px;
+    font-weight: bold;
+}
+.paypal-cont p {
+    display: table;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 20px 0 35px;
+}
+.paypal-cont > a {
+    float: left;
+    margin: 0 0 30px;
+}
+.contact-form {
+    box-sizing: border-box;
+    float: right;
+    margin: 15px 0;
+    padding: 25px 6%;
+	border-left:1px solid #8c8c8c;
+    width: 50%;
+}
+.contact-form fieldset {
+    border: medium none;
+}
+.contact-form fieldset legend {
+    font-size: 22px;
+    font-weight: bold;
+}
+.contact-form fieldset p {
+    font-size: 20px;
+    margin: 7px 0 25px;
+}
+.contact-form fieldset input {
+	width:90%;
+	height:34px;
+	padding:6px 12px;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#555;
+	background-color:#fff;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+    font-family: 'Lato', sans-serif;
+	border-radius:4px;
+	margin:0 0 15px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.contact-form fieldset input:focus {
+	border-color:#66afe9;
+	outline:0;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.contact-form fieldset button {
+    background: #337ab7 none repeat scroll 0 0;
+    border: 1px solid #2e6da4;
+    border-radius: 5px;
+    color: #fff;
+	margin:5px 0 0;
+    cursor: pointer;
+    font-family: "Lato",sans-serif;
+    font-size: 15px;
+    padding: 5px 20px;
+}
+.contact-form fieldset button:hover, .contact-form fieldset button:focus {
+    background-color: #286090;
+    border-color: #204d74;
+    color: #fff;
+}
+main article h3 + p {
+	font-size:16px;
+	line-height:20px;
+	padding:0 0 0 25px;
+	box-sizing:border-box;
+	float:left;
+	width:100%
+}
+footer {
+    border-top: 1px solid #8c8c8c;
+    box-sizing: border-box;
+    color: #666;
+    float: left;
+    margin: 55px 0 0;
+    padding: 20px 35px;
+    width: 100%;
+}
+footer .accredition {
+    float: right;
+}
+footer address {
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+footer p {
+    float: left;
+    font-size: 14px;
+    margin: 15px 0 0;
+    width: 100%;
+}
+@media screen and (max-width:768px) {
+	.paypal-cont, .contact-form{
+		width:100%;
+		border:none;
+	}
+}
