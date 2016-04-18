@@ -1,8 +1,15 @@
-var app = angular.module('flapperNews', []);
-
+var app = angular.module('flapperNews', ['ui-router']);
+app.factory('posts', [function() {
+  var o = {
+    posts: []
+  };
+  return o;
+}]);
 app.controller('MainCtrl', [
 '$scope',
-function($scope){
+'posts',
+function($scope,posts){
+  $scope.posts = posts.posts;
   $scope.posts = [
     {title: 'post 1', upvotes: 5},
     {title: 'post 2', upvotes: 2},
@@ -22,5 +29,5 @@ function($scope){
   };
   $scope.incrementUpvotes = function(post) {
     post.upvotes += 1;
-  };    
+  };
 }]);
