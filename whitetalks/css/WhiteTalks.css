@@ -379,10 +379,10 @@ body > section {
     height: 45px;
 }
 .signin-form .form-cont label input[type="text"] {
-    background: #fff url("images/user-icon.png") no-repeat scroll right 15px center;
+    background: #fff url("../images/user-icon.png") no-repeat scroll right 15px center;
 }
 .signin-form .form-cont label input[type="password"] {
-    background: #fff url("images/password-icon.png") no-repeat scroll right 15px center;
+    background: #fff url("../images/password-icon.png") no-repeat scroll right 15px center;
 }
 .signin-form legend a {
     color: #b5b5b5;
