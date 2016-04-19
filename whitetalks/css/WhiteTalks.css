@@ -354,6 +354,84 @@ body > section {
   width: 100%;
   vertical-align: top;
 }
+.signin-form legend {
+    border: medium none;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 40px;
+}
+.signin-form .form-cont {
+    background: #1bbc9b none repeat scroll 0 0;
+    box-sizing: border-box;
+    color: #fff;
+    float: left;
+    padding: 20px 40px;
+    width: 100%;
+}
+.signin-form .form-cont label {
+    margin: 0;
+    width: 100%;
+}
+.signin-form .form-cont .form-group label input {
+    border: medium none;
+    font-size: 15px;
+    font-style: italic;
+    height: 45px;
+}
+.signin-form .form-cont label input[type="text"] {
+    background: #fff url("images/user-icon.png") no-repeat scroll right 15px center;
+}
+.signin-form .form-cont label input[type="password"] {
+    background: #fff url("images/password-icon.png") no-repeat scroll right 15px center;
+}
+.signin-form legend a {
+    color: #b5b5b5;
+    text-decoration: underline;
+}
+.signin-form legend a:hover {
+    text-decoration: none;
+}
+.signin-form {
+    position: relative;
+}
+.signin-form .close {
+    position: absolute;
+    right: 40px;
+    top: 22px;
+}
+.signin-form .form-info-cont > p, .signin-form .form-info-cont a {
+    color: #fff;
+    margin: 10px 0 0;
+}
+.signin-form .form-info-cont > a {
+    display: block;
+    margin: 5px 0;
+}
+.signin-form .form-info-cont a {
+    text-decoration: underline;
+}
+.signin-form .form-info-cont a:hover {
+    text-decoration: none;
+}
+.signin-form .form-info-cont {
+    float: left;
+    font-style: italic;
+    width: 68%;
+}
+.signin-form .btn-cont {
+    float: left;
+    width: 32%;
+}
+.signin-form .btn-cont .btn {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    color: #1bbc9b;
+    float: right;
+    font-size: 16px;
+    margin: 20px 0 0;
+    padding: 8px 0;
+    width: 98%;
+}
 @media (min-width: 1024px) {
     #main-slider .carousel .item {
         background-position: 1%;
@@ -373,11 +451,6 @@ body > section {
         -o-transition: opacity ease-in-out 500ms;
         transition: opacity ease-in-out 500ms;
     }
-}
-@media screen and (max-height: 648px) {
-  #myModal.modal.in {
-    align-items: flex-start;
-  }
 }
 @media (min-width: 768px) and (max-width:1023px){
     #main-slider .carousel .item {
@@ -1077,10 +1150,10 @@ ul.tag-cloud li {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 0% auto; /* 15% from the top and centered */
-    padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    margin: 0 auto;
+    max-width: 460px;
+    width: 80%;
 }
 /* The Close Button */
 .close {
@@ -1088,6 +1161,7 @@ ul.tag-cloud li {
     float: right;
     font-size: 24px;
     font-weight: bold;
+    opacity: 1;
 }
 
 
