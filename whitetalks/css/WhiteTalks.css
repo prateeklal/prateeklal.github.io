@@ -350,6 +350,10 @@ body > section {
 .glyphicon {
   font-size: 16px;
 }
+.full-stripe {
+  width: 100%;
+  vertical-align: top;
+}
 @media (min-width: 1024px) {
     #main-slider .carousel .item {
         background-position: 1%;
