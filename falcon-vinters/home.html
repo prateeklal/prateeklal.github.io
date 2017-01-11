@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage | Falcon Vinters</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-mast">
+            <header>
+                <address>
+                    <a href="tel:+4402085167780">+44 (0) 20 8516 7780</a>
+                    <a href="mailto:info@example.com">Email Us</a>
+                </address>
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.png" alt="Falcon Vinters">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#buy">Buy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>Merchants of Rare and Fine Wines</h1>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search eg. Barolo" required>
+                    <button>Search</button>
+                </form>
+                <span class="link">Advanced Search &gt;</span>
+            </div>
+        </div>
+        <div class="action-panel">
+            <h3>Download our Full Wine List</h3>
+            <div class="buttons-group">
+                <a href="#?file:excel" download="">Excel</a>
+                <a href="#?file:pdf" download="">PDF</a>
+            </div>
+        </div>
+        <div class="desc-panel">
+            <article>
+                <h2>About Falcon</h2>
+                <p>Established in 1995, Falcon Vintners offers an extensive range of fine wines from young and mature vintages.  Our speciality are the fine wine of Italy and France but we also cover other parts of Europe and the New World.</p>
+            </article>
+            <article>
+                <h2>Buy</h2>
+                <p>We specialise in highly sought-after, hard-to-find and older vintages but also a good range of everyday drinking wines. Most of our stock is available for immediate delivery.</p>
+            </article>
+            <article>
+                <h2>Sell</h2>
+                <p>If you’re looking to sell we’ll aim to get the best price for you and charge competitive commission rates.</p>
+            </article>
+            <article>
+                <h2>Store</h2>
+                <p>All our wines are stored at the temperature controlled warehouse, Vinotheque in Burton-on-Trent.  We can store wines on your behalf in a sub-account at very competitive rates.</p>
+            </article>
+        </div>
+        <div class="action-panel">
+            <h3>Register for Falcon Vintners News and Offers</h3>
+            <div class="search">
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button>Register</button>
+                </form>
+            </div>
+        </div>
+        <!--TODO Social Scroll-->
+        <div class="slider"></div>
+        <footer>
+            <div class="register column">
+                <strong>Register</strong>
+                <p>For our monthly lists and special offers, sign up to our newsletter</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <!--TODO Double forward arrows unicode-->
+                    <button>Submit &gt;&gt;</button>
+                </form>
+            </div>
+            <ul class="column">
+                <li>Our Services
+                    <ul>
+                        <li>
+                            <a href="#about-falcon">About Falcon</a>
+                        </li>
+                        <li>
+                            <a href="#buy">Buy</a>
+                        </li>
+                        <li>
+                            <a href="#sell">Sell</a>
+                        </li>
+                        <li>
+                            <a href="#store">Store</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <address class="column">
+                <strong>Contact</strong>
+                <p>
+                    Trident Business Centre <br>
+                    89 Bickersteth Road <br>
+                    London, SW16 9SH <br>
+                    United Kingdom <br>
+                    T: +44 (0)20 8516 7780
+                </p>
+            </address>
+            <div class="social column">
+                <a href="#twitter"></a>
+                <a href="#facebook"></a>
+                <a href="#blogger"></a>
+            </div>
+        </footer>
+    </div>
+    <!--Advanced Search Modal-->
+    <div class="modal-wrap">
+        <div class="modal-main">
+            <h3>Advanced Search</h3>
+            <form>
+                <div>
+                    <label for="wine-name">Wine Name</label>
+                    <input type="text" id="wine-name">
+                </div>
+                <div>
+                    <label for="producers">Producers</label>
+                    <input type="text" id="producers">
+                </div>
+                <div>
+                    <label for="vintages">Vintages</label>
+                    <input type="text" id="vintages">
+                </div>
+                <button>Search</button>
+                <span class="cancel">&times;</span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

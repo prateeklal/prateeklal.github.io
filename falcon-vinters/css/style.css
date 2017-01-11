@@ -1,0 +1,148 @@
+/*Reset Styles*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Homepage*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: table;
+    margin: auto;
+}
+.top-mast {
+    background: url("../images/home-bg.png") no-repeat;
+    height: 499px;
+}
+
+.top-mast header {
+    display: table;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.logo {
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    width: 100%;
+}
+.top-mast address {
+    float: left;
+    font-style: normal;
+    margin: 50px 0 0;
+}
+.top-mast nav {
+    float: right;
+    margin: 50px 0 0;
+    min-width: 300px;
+}
+.top-mast nav li {
+}
+li {
+    display: inline;
+}
+.top-mast address a {
+    color: #dbcaaa;
+    margin: 0 12px;
+}
+a {
+    text-decoration: none;
+}
+.top-mast nav a {
+    color: #dbcaaa;
+}
+.top-mast nav ul {
+    text-align: right;
+}
+.top-mast nav ul li {
+    margin: 0 12px;
+}
+.top-mast h1 {
+    color: #f4e9c4;
+    display: table;
+    font-size: 30px;
+    margin-top: 140px;
+    text-align: center;
+    width: 100%;
+}
+.top-mast .search {
+    clear: both;
+    display: table;
+    margin: 60px auto;
+    min-width: 600px;
+    text-align: right;
+}
+.top-mast .search input {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #666;
+    font-size: 18px;
+    padding: 15px 0 15px 15px;
+    width: 100%;
+}
+.top-mast .search button {
+    background-color: #8b0000;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.top-mast .search form {
+    position: relative;
+}
+.top-mast .search .link {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+.top-mast .search .link:hover {
+    text-decoration: underline;
+}
+.action-panel {
+    background-color: #3e0000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+.action-panel h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+img {
+    vertical-align: top;
+}
+.buttons-group a {
+    background-color: #8b0000;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 12px;
+    padding: 13px 0;
+    width: 130px;
+}
+
+.desc-panel article {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    height: 200px;
+    border-color: #3e0000;
+}
+.desc-panel article:nth-child(2n+1) {
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+.desc-panel article:nth-child(even) {
+}
