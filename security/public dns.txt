@@ -1,0 +1,6 @@
+ec2-52-33-130-65.us-west-2.compute.amazonaws.com
+
+Availability zone ---> us-west-2a
+
+
+115.97.168.68

@@ -1,82 +1,77 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>JavaScript Loan Calculator by David Flanagan</title>
-		<style> 
-			/* This is a CSS style sheet: it adds style to the program output */
-			.output { font-weight: bold; }
-			/* Calculated values in bold */
-			#payment { text-decoration: underline; } /* For element with id="payment" */
-			#graph { border: solid black 1px; }
-			/* Chart has a simple border */
-			th, td { vertical-align: top; }
-			/* Don't center table cells */
-		</style>
-		<script type="text/javascript" src="loancalc.js"></script>
-	</head>
-	<body>
-		<!--
-		This is an HTML table with <input> elements that allow the user to enter data
-		and <span> elements in which the program can display its results.
-		These elements have ids like "interest" and "years". These ids are used
-		in the JavaScript code that follows the table. Note that some of the input
-		elements define "onchange" or "onclick" event handlers. These specify strings
-		of JavaScript code to be executed when the user enters data or clicks.
-		-->
-		<table>
-			<tr>
-				<th>Enter Loan Data:</th>
-				<td></td>
-				<th>Loan Balance, Cumulative Equity, and Interest Payments</th>
-			</tr>
-			<tr>
-				<td>Amount of the loan ($):</td>
-				<td>
-					<input id="amount" onchange="calculate();">
-				</td>
-				<td rowspan=8>
-					<canvas id="graph" width="400" height="250"></canvas>
-				</td>
-			</tr>
-			<tr>
-				<td>Annual interest (%):</td>
-				<td>
-					<input id="apr" onchange="calculate();">
-				</td>
-			</tr>
-			<tr>
-				<td>Repayment period (years):</td>
-				<td><input id="years" onchange="calculate();"></td>
-			</tr>
-			<tr>
-				<td>Zipcode (to find lenders):</td>
-				<td><input id="zipcode" onchange="calculate();"></td>
-			</tr>
-			<tr>
-				<th>Approximate Payments:</th>
-				<td><button onclick="calculate();">Calculate</button></td>
-			</tr>
-			<tr>
-				<td>Monthly payment:</td>
-				<td>$<span class="output" id="payment"></span></td>
-			</tr>
-			<tr>
-				<td>Total payment:</td>
-				<td>$<span class="output" id="total"></span></td>
-			</tr>
-			<tr>
-				<td>Total interest:</td>
-				<td>$<span class="output" id="totalinterest"></span></td>
-			</tr>
-			<tr>
-				<th>Sponsors:</th>
-				<td colspan=2>Apply for your loan with one of these fine lenders:
-					<div id="lenders"></div>
-				</td>
-			</tr>
-		</table>
-		<!-- The rest of this example is JavaScript code in the <script> tag below -->
-		<!-- Normally, this script would go in the document <head> above but it -->
-		<!-- is easier to understand here, after you've seen its HTML context. -->
-	</body>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prateek Lal | Front-end developer and designer based in Hyderabad, India</title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300|Raleway:700,800|Poiret+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="home" style="background-image:url(images/background-1.jpg);">
+			<span class="bg"></span>
+			<strong>hello World!</strong>
+			<h1>I'm <span>Prateek</span></h1>
+			<p>Front-end developer and designer.</p>
+			<a href="#" class="show"><span>Read More</span></a>
+		</div>
+		<div class="desc">
+			<p><span>G</span>rown up in the outskirts of a small town Ranchi, I have always had the passion towards computers, arts and designing. Since the time of high school, my life has been a journey towards learning the languages of the web. Having served in multiple organizations I have had an amazing experience learning and developing in <b>HTML5, CSS3</b> and <b>JavaScript</b>. I enjoy doing semantic development and I am a strict admirer of DRY principle. <br><br>Presently I stay and work in Hyderabad pursuing <b>Node.js</b> and <b>AngularJS</b></p>
+			<hr>
+			<p>If you have any questions, suggestions or just want to get in touch you can email me at <a href="mailto:contact@prateeklal.com">contact@prateeklal.com</a></p>
+		</div>
+		<section id="work-cont">
+			<div class="work-banner">
+				<div class="wrap">
+					<h2>WORK</h2>
+					<p>Kudos to open source, my work has been a great learning experience ever since the beginning into website development. Over the years of working for web everyday has been fun and interesting.</p>
+				</div>
+			</div>
+			<!--var imageSet = ['images/osm-residents-responsive.gif','images/projector-lamps.gif','images/sindhu-sadan.gif','images/gsk-mint.gif','images/pcfm-inner.gif','images/walls-basket.gif','images/walls-basket.gif']-->
+			<div class="pan">
+				<figure>
+					<img src="images/thewardrobe.gif">
+				</figure>
+				<figure>
+					<img src="images/walls-mobile.gif">
+				</figure>
+				<figure>
+					<img src="images/manik-login.gif">
+				</figure>
+				<figure>
+					<img src="images/projector-lamps.gif">
+				</figure>
+				<figure>
+					<img src="images/thewardrobe-second.gif">
+				</figure>
+			</div>
+			<div class="pan">
+				<figure>
+					<img src="images/thewalls.gif">
+				</figure>
+				<figure>
+					<img src="images/osm-residents.gif">
+				</figure>
+				<figure>
+					<img src="images/sindhu-sadan.gif">
+				</figure>
+				<figure>
+					<img src="images/pcfm-inner.gif">
+				</figure>
+				<figure>
+					<img src="images/osm-residents-responsive.gif">
+				</figure>
+			</div>
+			<!--<a href="#" class="load">LOAD MORE</a>-->
+		</section>
+		<footer>
+			<div class="wrap">
+				<hr>
+				<p class="copyright">&copy 2016 | Prateek Lal</p>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
 </html>

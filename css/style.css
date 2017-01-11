@@ -1,0 +1,306 @@
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Raleway', sans-serif;*/
+
+*{
+	margin:0;
+	padding:0;
+}
+html,body,.wrapper {
+	height:100%;
+}
+b {
+	font-weight:500;
+}
+body {
+	font-size:1em;
+	background:#fff;
+	font-family: 'Nunito', sans-serif;
+	font-weight:300;
+}
+.home {
+	background-position: center bottom;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+	height:80%;
+    min-height: 640px;
+    position: relative;
+}
+
+.home .bg {
+    background: rgba(56, 65, 81, 0.78) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+.home strong {
+    color: #f0f0f1;
+    font-family: "Raleway",sans-serif;
+    font-size: 4em;
+    font-weight: 800;
+}
+.home > * {
+    line-height: 2em;
+    position: relative;
+    z-index: 1;
+}
+.home h1 {
+    color: #f0f0f1;
+    font-family: "Poiret One",cursive;
+    font-size: 5.5em;
+    font-weight: 300;
+    margin-top: 1%;
+}
+.home h1 span {
+    background: #f0f0f1 none repeat scroll 0 0;
+    border-radius: 10px;
+    color: #384151;
+    display: inline-block;
+    height: 88px;
+    line-height: 80px;
+    padding: 0 15px;
+    vertical-align: baseline;
+}
+.home p {
+    color: #f0f0f1;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+.home > a {
+    background: #384151;
+	border:1px solid #f0f0f1;
+    color: #384151;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 61px;
+    line-height: 60px;
+    margin: 13% 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 220px;
+}
+.home > a, .home > a span {
+    border-radius: 8px;
+}
+.home > a span {
+    background: #f0f0f1 none repeat scroll 0 0;
+    display: inline-block;
+    line-height: 54px;
+    width: 96%;
+}
+.home > a.show::after {
+    background: url("../images/btm-arrow.png") repeat scroll 0 0;
+    bottom: -36px;
+    content: "";
+    height: 22px;
+    left: 40%;
+    position: absolute;
+    width: 30px;
+}
+.desc {
+    display: table;
+    font-size: 16px;
+    line-height: 28px;
+    margin: auto;
+	color:#384151;
+    width: 50%;
+}
+.desc p {
+    margin: 6% 0;
+}
+.desc p span {
+    color: #384151;
+    font-size: 4.5em;
+    vertical-align: sub;
+}
+hr {
+    display: table;
+    height: 1px;
+    margin: auto;
+    width: 40%;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+.desc p a {
+    color:#384151;
+    display: inline-block;
+}
+.desc p a:hover {
+    text-decoration: none;
+}
+.work-banner {
+    align-items: center;
+    background: transparent url("../images/work-bg.jpg") repeat scroll center bottom / cover ;
+    color: #fff;
+    display: flex;
+    height: 300px;
+    padding: 25px 0;
+}
+.work-banner .wrap {
+    display: table;
+    margin: auto;
+    width: 50%;
+}
+.work-banner h2 {
+    font-family: "Raleway",sans-serif;
+    font-size: 3em;
+    display: block;
+    font-weight: normal;
+    padding: 0 0 25px;
+    text-align: center;
+}
+.work-banner p {
+    color: #f8f8f8;
+    font-weight: 400;
+    line-height: 24px;
+}
+#work-cont {
+    text-align: center;
+	margin:0 0 4%;
+}
+#work-cont .pan {
+    display: inline-block;
+    margin: 4% 0 0;
+    vertical-align: top;
+    width: 45%;
+}
+.pan figure img {
+    display: inline-block;
+    vertical-align: top;
+}
+.pan figure {
+    box-shadow: 0 1px 7px -1px #9f9f9f;
+    display: inline-block;
+    margin: 0 0 10%;
+}
+.load {
+    background: #fff none repeat scroll 0 0;
+	border: 1px solid #384151;
+    border-radius: 2px;
+    color: #384151;
+    display: table;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+    padding: 12px 0;
+    text-decoration: none;
+    width: 180px;
+}
+.load:hover {
+    background: #384151 none repeat scroll 0 0;
+    border: 1px solid #384151;
+    color: #fff;
+}
+footer hr {
+	width:100%;
+	max-width:1100px;
+}
+.copyright {
+	color:#384151;
+	text-align:center;
+	font-size:12px;
+	margin:12px 0;
+}
+@media screen and (min-height: 1024px) {
+    .home {
+        height:auto;
+    }
+}
+@media screen and (max-width: 980px) {
+    .desc,.work-banner .wrap {
+        width:70%;
+    }
+    .pan figure img {
+        width: 100%;
+    }
+    #work-cont .pan {
+        margin-left:2%;
+        margin-right:2%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .home {
+        display: block;
+        height: auto !important;
+        min-height: 0;
+        padding: 5% 0;
+        text-align: center;
+    }
+    .home strong {
+        font-size: 2.5em;
+    }
+    .home h1 {
+        font-size: 3.5em;
+    }
+    .home h1 span {
+        height: auto;
+        line-height: normal;
+        padding: 0 2%;
+    }
+    .home p {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    .home > a.show {
+        display: none;
+    }
+    .desc {
+        font-size: 14px;
+        width: 85%;
+    }
+    selectorSavingError {
+    }
+    .desc p span {
+        font-size: 3.5em;
+    }
+    .work-banner {
+        height: auto;
+        padding: 5% 0;
+    }
+    .work-banner .wrap {
+        width: 85%;
+    }
+    .work-banner h2 {
+        font-size: 2em;
+        padding: 0 0 2%;
+    }
+    .work-banner p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .load {
+        font-size: 15px;
+        margin: 3% auto 0;
+        padding: 1.5% 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .home p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        padding:0 2px;
+    }
+    #work-cont .pan {
+        margin: auto;
+        width: 90%;
+    }
+    .work-banner {
+        margin: 0 0 5%;
+    }
+    .work-banner p {
+        text-align: left;
+    }
+}
