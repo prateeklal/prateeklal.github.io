@@ -1,0 +1,28 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/neon-animation/neon-animation-runner-behavior.html">
+<link rel="import" href="../custom-animation/bounce-in-animation.html">
+
+</head><body><dom-module id="my-bounce-in-animation">
+
+    <style>
+        :host {
+            display: block;
+        }
+        paper-button {
+            /*display: inline-block;*/
+            /*border-radius: 8px;*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            background: var(--paper-blue-500);
+            color: #fff;
+        }
+    </style>
+
+    <template>
+        <paper-button raised="" on-tap="animate">Click Me</paper-button>
+    </template>
+
+</dom-module>
+
+<script>Polymer({is:"my-bounce-in-animation",behaviors:[Polymer.NeonAnimationRunnerBehavior],properties:{animationConfig:{type:Object,value:function(){return{name:"bounce-in-animation",node:this}}}},listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},animate:function(){this.playAnimation()},_onNeonAnimationFinish:function(){console.log("animation finished!")}});</script></body></html>

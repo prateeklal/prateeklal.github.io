@@ -26,6 +26,7 @@
     <link rel="import" href="src/polymer-animations-app/my-slide-from-left-animation.html">
     <link rel="import" href="src/polymer-animations-app/my-fade-in-animation.html">
     <link rel="import" href="src/polymer-animations-app/my-fade-out-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-bounce-in-animation.html">
   </head>
   <body class="fullbleed layout vertical">
     <template is="dom-bind">
@@ -123,6 +124,16 @@
             <div class="card-actions">
               <paper-button on-click="_onButtonClickFadeOut">Click here</paper-button>
             </div>
+          </paper-card>
+
+          <paper-card heading="Bounce Button Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout vertical center-center">
+              <p>Custom animation using neon animation</p>
+              <my-bounce-in-animation></my-bounce-in-animation>
+            </div>
+            
+              
+            
           </paper-card>
         </main>
       </div>
