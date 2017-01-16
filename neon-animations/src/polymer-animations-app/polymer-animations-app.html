@@ -1,0 +1,36 @@
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/paper-styles/paper-styles-classes.html">
+<link rel="import" href="../../bower_components/paper-styles/paper-styles.html">
+
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+
+</head><body><dom-module id="polymer-animations-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-card {
+        padding: 30px 50px;
+        min-width: 500px;
+      }
+      paper-button {
+        background-color: var(--primary-color);
+        color: var(--google-grey-100);
+        margin-top: 30px;
+      }
+    </style>
+    <div class="flex layout vertical center-center">
+      <paper-card heading="Neon Animations">
+        <paper-button raised="" on-click="_onButtonClick">[[prop1]]</paper-button>
+        <my-scale-up-animation></my-scale-up-animation>
+      </paper-card>
+    </div>
+  </template>
+
+  <script>Polymer({is:"polymer-animations-app",properties:{prop1:{type:String,value:"Click Here"}}});</script>
+</dom-module>
+</body></html>

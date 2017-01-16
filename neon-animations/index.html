@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+
+    <title>polymer-animations</title>
+    <meta name="description" content="polymer-animations description">
+
+    
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+
+    <link rel="import" href="bower_components/paper-styles/paper-styles-classes.html">
+    <link rel="import" href="bower_components/paper-styles/paper-styles.html">
+
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+
+    <link rel="import" href="src/polymer-animations-app/my-scale-up-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-scale-down-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-slide-right-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-slide-from-right-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-slide-left-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-slide-from-left-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-fade-in-animation.html">
+    <link rel="import" href="src/polymer-animations-app/my-fade-out-animation.html">
+  </head>
+  <body class="fullbleed layout vertical">
+    <template is="dom-bind">
+      <style>
+        :host {
+          display: block;
+        }
+        main {
+          padding: 0 50px;
+        }
+        paper-toolbar {
+          margin-bottom: 25px;
+        }
+        paper-card {
+          min-width: 350px;
+          margin: 0 20px 20px 0;
+        }
+        paper-button {
+        background-color: var(--primary-color);
+        color: var(--google-grey-100);
+        }
+      </style>
+      <div class="">
+        <paper-toolbar>
+          <span class="title">Neon Animations</span>
+        </paper-toolbar>
+        <main>
+          <paper-card heading="Scale Up Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-scale-up-animation></my-scale-up-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClick">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Scale Down Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-scale-down-animation></my-scale-down-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickDown">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Slide Right Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-slide-right-animation></my-slide-right-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickSlideRight">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Slide From Right Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-slide-from-right-animation></my-slide-from-right-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickSlideFromRight">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Slide Left Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-slide-left-animation></my-slide-left-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickSlideLeft">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Slide From Left Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-slide-from-left-animation></my-slide-from-left-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickSlideFromLeft">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Fade In Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-fade-in-animation></my-fade-in-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickFadeIn">Click here</paper-button>
+            </div>
+          </paper-card>
+
+          <paper-card heading="Fade Out Animation" image="http://placehold.it/350x80/F6F6F6/F6F6F6">
+            <div class="card-content layout horizontal center-center">
+              <my-fade-out-animation></my-fade-out-animation>
+            </div>
+            <div class="card-actions">
+              <paper-button on-click="_onButtonClickFadeOut">Click here</paper-button>
+            </div>
+          </paper-card>
+        </main>
+      </div>
+    </template>
+    <polymer-animations-app class="flex layout vertical"></polymer-animations-app>
+
+    <script>var scope=document.querySelector('template[is="dom-bind"]');scope._onButtonClick=function(e){var n=document.querySelector("my-scale-up-animation");n&&n.animate()},scope._onButtonClickDown=function(e){var n=document.querySelector("my-scale-down-animation");n&&n.animate()},scope._onButtonClickSlideRight=function(e){var n=document.querySelector("my-slide-right-animation");n&&n.animate()},scope._onButtonClickSlideFromRight=function(e){var n=document.querySelector("my-slide-from-right-animation");n&&n.animate()},scope._onButtonClickSlideLeft=function(e){var n=document.querySelector("my-slide-left-animation");n&&n.animate()},scope._onButtonClickSlideFromLeft=function(e){var n=document.querySelector("my-slide-from-left-animation");n&&n.animate()},scope._onButtonClickFadeIn=function(e){var n=document.querySelector("my-fade-in-animation");n&&n.animate()},scope._onButtonClickFadeOut=function(e){var n=document.querySelector("my-fade-out-animation");n&&n.animate()};</script>
+  
+
+</body></html>
